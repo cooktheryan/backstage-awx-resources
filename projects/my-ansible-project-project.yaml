@@ -1,0 +1,13 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleProject
+metadata:
+  name: my-ansible-project-project-$git
+spec:
+  repo: https://github.com/ansible/ansible-tower-samples.git
+  branch: 
+  name: my-ansible-project
+  scm_type: git
+  organization: Default}
+  description: My Ansible project that contains my playbooks
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
