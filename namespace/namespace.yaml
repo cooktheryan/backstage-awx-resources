@@ -1,14 +1,9 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  creationTimestamp: "2023-04-20T13:57:08Z"
   labels:
     kubernetes.io/metadata.name: backstage-aap
   name: backstage-aap
-  resourceVersion: "434"
-  uid: f3c323b6-284b-4ad6-b2c7-748bdf769dcb
 spec:
   finalizers:
   - kubernetes
-status:
-  phase: Active
