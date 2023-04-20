@@ -1,0 +1,10 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleSchedule
+metadata:
+  name: aap-schedule-with-catalog3-Demo Job Template-schedule
+spec:
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
+  name: aap-schedule-with-catalog3
+  rrule: DTSTART:20210101T000000Z RRULE:FREQ=DAILY;INTERVAL=1;COUNT=1
+  unified_job_template: Demo Job Template
