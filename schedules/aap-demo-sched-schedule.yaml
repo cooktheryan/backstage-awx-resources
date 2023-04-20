@@ -1,7 +1,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleSchedule
 metadata:
-  name: aap-demo-sched-Demo Job Template-schedule
+  name: aap-demo-sched-schedule
 spec:
   connection_secret: awxaccess
   runner_pull_policy: IfNotPresent
