@@ -1,0 +1,10 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleSchedule
+metadata:
+  name: my-job-schedule-schedule
+spec:
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
+  name: my-job-schedule
+  rrule: DTSTART:20210101T000000Z RRULE:FREQ=DAILY;INTERVAL=1;COUNT=1
+  unified_job_template: jobtemplate-sample
