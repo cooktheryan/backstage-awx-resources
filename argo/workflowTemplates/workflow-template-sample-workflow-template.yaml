@@ -1,8 +1,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: workflow-template-sample-workflow-template
-spec:
+  name: workflow-template-sample
   connection_secret: awxaccess
   name: workflow-template-sample
   description: Workflow template sample
