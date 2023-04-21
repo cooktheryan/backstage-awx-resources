@@ -1,0 +1,12 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: workflow-sample-workflow-template
+spec:
+  connection_secret: awxaccess
+  name: workflow-sample
+  description: 
+  organization: 
+  inventory: Demo Inventory
+  workflow_nodes:
+    
