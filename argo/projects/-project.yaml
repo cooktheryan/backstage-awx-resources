@@ -1,0 +1,13 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleProject
+metadata:
+  name: sampleproject-project-git
+spec:
+  repo: https://github.com/cooktheryan/ansible-tower-samples
+  branch: master
+  name: sampleproject
+  scm_type: git
+  organization: Default
+  description: A new project for AAP defined by backstage
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
