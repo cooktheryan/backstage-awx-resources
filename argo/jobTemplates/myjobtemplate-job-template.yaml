@@ -1,0 +1,11 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: myjobtemplate-job-template
+spec:
+  tower_auth_secret: awxaccess
+  job_template_name: myjobtemplate
+  job_template_project: myproject
+  job_template_playbook: sample.yaml
+  job_template_inventory: Demo Inventory
