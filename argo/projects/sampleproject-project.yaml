@@ -1,0 +1,13 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleProject
+metadata:
+  name: sampleproject-project-git
+spec:
+  repo: 
+  branch: 
+  name: sampleproject
+  scm_type: git
+  organization: Default
+  description: a test
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
