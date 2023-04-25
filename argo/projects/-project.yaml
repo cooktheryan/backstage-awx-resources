@@ -1,0 +1,13 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleProject
+metadata:
+  name: aap-demo-project-project-git
+spec:
+  repo: https://github.com/cooktheryan/ansible-tower-samples
+  branch: master
+  name: aap-demo-project
+  scm_type: git
+  organization: Default
+  description: Workflow template sample
+  connection_secret: awxaccess
+  runner_pull_policy: IfNotPresent
