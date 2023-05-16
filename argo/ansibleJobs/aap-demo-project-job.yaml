@@ -1,0 +1,10 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: aap-demo-project-job
+spec:
+  connection_secret: awxaccess
+  job_template_name: Volume Snapshots
+  extra_vars:
+    namespace: 
