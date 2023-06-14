@@ -9,6 +9,6 @@ metadata:
     github.com/project-slug: cooktheryan/backstage-awx-resources
 spec:
   type: api
-  system: 
+  system: test
   lifecycle: production
   owner: rcook
