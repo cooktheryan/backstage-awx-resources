@@ -1,0 +1,12 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: jobtemplate-sample-job-template
+  namespace: aap
+spec:
+  tower_auth_secret: aapaccess
+  job_template_name: jobtemplate-sample
+  job_template_project: aap
+  job_template_playbook: hello_world.yml
+  job_template_inventory: aap

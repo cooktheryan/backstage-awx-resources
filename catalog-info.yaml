@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-awx-resources
+  description: A new project for AAP defined by backstage
+  annotations:
+    backstage.io/kubernetes-id: backstage-awx-resources
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: cooktheryan/backstage-awx-resources
+spec:
+  type: api
+  system: 
+  lifecycle: production
+  owner: rcook
